@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4E16B278292E7777001ACF1A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16B277292E7777001ACF1A /* HomePage.swift */; };
+		4E2D2A4C293656BD009A9D55 /* detailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D2A4B293656BD009A9D55 /* detailPage.swift */; };
 		4E55FB46292C5198002C142B /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55FB45292C5198002C142B /* SignUpPage.swift */; };
+		4E8A205029367CF60073465B /* EditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A204F29367CF60073465B /* EditPage.swift */; };
 		4ECB8D3B292AFF7400AD258F /* Auth_keeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB8D3A292AFF7400AD258F /* Auth_keeperApp.swift */; };
 		4ECB8D3D292AFF7400AD258F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB8D3C292AFF7400AD258F /* ContentView.swift */; };
 		4ECB8D3F292AFF7500AD258F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECB8D3E292AFF7500AD258F /* Assets.xcassets */; };
 		4ECB8D42292AFF7500AD258F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECB8D41292AFF7500AD258F /* Preview Assets.xcassets */; };
 		4EE6B849292E929A008C2838 /* CreateRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6B848292E929A008C2838 /* CreateRecord.swift */; };
-		4EE6B84B292E9C68008C2838 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6B84A292E9C68008C2838 /* ViewModel.swift */; };
 		4EE6B84D292EA67F008C2838 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EE6B84C292EA67F008C2838 /* GoogleService-Info.plist */; };
 		4EE6B850292EA738008C2838 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4EE6B84F292EA738008C2838 /* FirebaseAuth */; };
 		4EE6B852292EA738008C2838 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4EE6B851292EA738008C2838 /* FirebaseAuthCombine-Community */; };
@@ -28,20 +29,23 @@
 		4EE6B862292EA738008C2838 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 4EE6B861292EA738008C2838 /* FirebaseInstallations */; };
 		4EE6B864292EA738008C2838 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4EE6B863292EA738008C2838 /* FirebaseStorage */; };
 		4EE6B866292EA96F008C2838 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6B865292EA96F008C2838 /* Authentication.swift */; };
+		4EEEFCCE29300EA500F7A06B /* firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEEFCCD29300EA500F7A06B /* firebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E16B277292E7777001ACF1A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		4E2D2A4B293656BD009A9D55 /* detailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailPage.swift; sourceTree = "<group>"; };
 		4E55FB45292C5198002C142B /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		4E8A204F29367CF60073465B /* EditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPage.swift; sourceTree = "<group>"; };
 		4ECB8D37292AFF7400AD258F /* Auth_keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth_keeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECB8D3A292AFF7400AD258F /* Auth_keeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth_keeperApp.swift; sourceTree = "<group>"; };
 		4ECB8D3C292AFF7400AD258F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4ECB8D3E292AFF7500AD258F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ECB8D41292AFF7500AD258F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EE6B848292E929A008C2838 /* CreateRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecord.swift; sourceTree = "<group>"; };
-		4EE6B84A292E9C68008C2838 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4EE6B84C292EA67F008C2838 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EE6B865292EA96F008C2838 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		4EEEFCCD29300EA500F7A06B /* firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +97,10 @@
 				4E55FB45292C5198002C142B /* SignUpPage.swift */,
 				4E16B277292E7777001ACF1A /* HomePage.swift */,
 				4EE6B848292E929A008C2838 /* CreateRecord.swift */,
-				4EE6B84A292E9C68008C2838 /* ViewModel.swift */,
 				4EE6B865292EA96F008C2838 /* Authentication.swift */,
+				4EEEFCCD29300EA500F7A06B /* firebase.swift */,
+				4E2D2A4B293656BD009A9D55 /* detailPage.swift */,
+				4E8A204F29367CF60073465B /* EditPage.swift */,
 			);
 			path = Auth_keeper;
 			sourceTree = "<group>";
@@ -195,11 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E16B278292E7777001ACF1A /* HomePage.swift in Sources */,
+				4E2D2A4C293656BD009A9D55 /* detailPage.swift in Sources */,
 				4ECB8D3D292AFF7400AD258F /* ContentView.swift in Sources */,
+				4EEEFCCE29300EA500F7A06B /* firebase.swift in Sources */,
 				4E55FB46292C5198002C142B /* SignUpPage.swift in Sources */,
 				4EE6B849292E929A008C2838 /* CreateRecord.swift in Sources */,
 				4ECB8D3B292AFF7400AD258F /* Auth_keeperApp.swift in Sources */,
-				4EE6B84B292E9C68008C2838 /* ViewModel.swift in Sources */,
+				4E8A205029367CF60073465B /* EditPage.swift in Sources */,
 				4EE6B866292EA96F008C2838 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
