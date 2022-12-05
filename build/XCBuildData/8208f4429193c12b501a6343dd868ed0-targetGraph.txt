@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+App_WidgetExtension in Auth_keeper, no dependencies
+App_widgetExtension in Auth_keeper, no dependencies
+App_WidgetExtension in Auth_keeper, no dependencies
+Auth_keeper in Auth_keeper, depends on:
+App_widgetExtension in Auth_keeper (explicit)
+App_WidgetExtension in Auth_keeper (explicit)
+App_WidgetExtension in Auth_keeper (explicit)

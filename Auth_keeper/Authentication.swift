@@ -18,6 +18,7 @@ class Authentication :ObservableObject{
     @Published  var isAccountCreated =  false
     @Published var isUserAuthenticated = false
     @Published var isUserSignedIn = false
+    @Published var isUser : Bool = false
  
     
     func register(email : String, password : String){
@@ -53,14 +54,16 @@ class Authentication :ObservableObject{
         
     }
     
-//    func userSignedIn(){
-//        if Auth.auth().currentUser != nil {
-//          isUserAuthenticated = true
-//        } else {
-//          // No user is signed in.
-//          // ...
-//        }
-//    }
+    func userSignedIn(){
+         if Auth.auth().currentUser != nil {
+           isUser = true
+         } else {
+           // No user is signed in.
+           // ...
+             isUser = false
+             
+         }
+     }
     
    
 }

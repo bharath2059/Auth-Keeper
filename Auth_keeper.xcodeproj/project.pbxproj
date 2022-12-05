@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E00FAF5293D7F3200B24617 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E00FAF4293D7F3200B24617 /* SplashScreen.swift */; };
+		4E00FAFD293D85FF00B24617 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E00FAFC293D85FF00B24617 /* WidgetKit.framework */; };
+		4E00FAFF293D85FF00B24617 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E00FAFE293D85FF00B24617 /* SwiftUI.framework */; };
+		4E00FB02293D85FF00B24617 /* widgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E00FB01293D85FF00B24617 /* widgetApp.swift */; };
+		4E00FB05293D860000B24617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E00FB04293D860000B24617 /* Assets.xcassets */; };
+		4E00FB07293D860000B24617 /* widgetApp.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4E00FB03293D85FF00B24617 /* widgetApp.intentdefinition */; };
+		4E00FB08293D860000B24617 /* widgetApp.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4E00FB03293D85FF00B24617 /* widgetApp.intentdefinition */; };
+		4E00FB0B293D860000B24617 /* widgetAppExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E00FAFA293D85FF00B24617 /* widgetAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E16B278292E7777001ACF1A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16B277292E7777001ACF1A /* HomePage.swift */; };
 		4E2D2A4C293656BD009A9D55 /* detailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D2A4B293656BD009A9D55 /* detailPage.swift */; };
 		4E55FB46292C5198002C142B /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55FB45292C5198002C142B /* SignUpPage.swift */; };
@@ -32,7 +40,39 @@
 		4EEEFCCE29300EA500F7A06B /* firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEEFCCD29300EA500F7A06B /* firebase.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4E00FB09293D860000B24617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECB8D2F292AFF7400AD258F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E00FAF9293D85FF00B24617;
+			remoteInfo = widgetAppExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E00FB0C293D860000B24617 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4E00FB0B293D860000B24617 /* widgetAppExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E00FAF4293D7F3200B24617 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		4E00FAFA293D85FF00B24617 /* widgetAppExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetAppExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E00FAFC293D85FF00B24617 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4E00FAFE293D85FF00B24617 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4E00FB01293D85FF00B24617 /* widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetApp.swift; sourceTree = "<group>"; };
+		4E00FB03293D85FF00B24617 /* widgetApp.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widgetApp.intentdefinition; sourceTree = "<group>"; };
+		4E00FB04293D860000B24617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E00FB06293D860000B24617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E16B277292E7777001ACF1A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		4E2D2A4B293656BD009A9D55 /* detailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailPage.swift; sourceTree = "<group>"; };
 		4E55FB45292C5198002C142B /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
@@ -49,6 +89,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E00FAF7293D85FF00B24617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E00FAFF293D85FF00B24617 /* SwiftUI.framework in Frameworks */,
+				4E00FAFD293D85FF00B24617 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4ECB8D34292AFF7400AD258F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,10 +119,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E00FAFB293D85FF00B24617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E00FAFC293D85FF00B24617 /* WidgetKit.framework */,
+				4E00FAFE293D85FF00B24617 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E00FB00293D85FF00B24617 /* widgetApp */ = {
+			isa = PBXGroup;
+			children = (
+				4E00FB01293D85FF00B24617 /* widgetApp.swift */,
+				4E00FB03293D85FF00B24617 /* widgetApp.intentdefinition */,
+				4E00FB04293D860000B24617 /* Assets.xcassets */,
+				4E00FB06293D860000B24617 /* Info.plist */,
+			);
+			path = widgetApp;
+			sourceTree = "<group>";
+		};
 		4ECB8D2E292AFF7400AD258F = {
 			isa = PBXGroup;
 			children = (
 				4ECB8D39292AFF7400AD258F /* Auth_keeper */,
+				4E00FB00293D85FF00B24617 /* widgetApp */,
+				4E00FAFB293D85FF00B24617 /* Frameworks */,
 				4ECB8D38292AFF7400AD258F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				4ECB8D37292AFF7400AD258F /* Auth_keeper.app */,
+				4E00FAFA293D85FF00B24617 /* widgetAppExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +173,7 @@
 				4EEEFCCD29300EA500F7A06B /* firebase.swift */,
 				4E2D2A4B293656BD009A9D55 /* detailPage.swift */,
 				4E8A204F29367CF60073465B /* EditPage.swift */,
+				4E00FAF4293D7F3200B24617 /* SplashScreen.swift */,
 			);
 			path = Auth_keeper;
 			sourceTree = "<group>";
@@ -116,6 +189,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E00FAF9293D85FF00B24617 /* widgetAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E00FB0F293D860000B24617 /* Build configuration list for PBXNativeTarget "widgetAppExtension" */;
+			buildPhases = (
+				4E00FAF6293D85FF00B24617 /* Sources */,
+				4E00FAF7293D85FF00B24617 /* Frameworks */,
+				4E00FAF8293D85FF00B24617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetAppExtension;
+			productName = widgetAppExtension;
+			productReference = 4E00FAFA293D85FF00B24617 /* widgetAppExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4ECB8D36292AFF7400AD258F /* Auth_keeper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ECB8D45292AFF7500AD258F /* Build configuration list for PBXNativeTarget "Auth_keeper" */;
@@ -123,10 +213,12 @@
 				4ECB8D33292AFF7400AD258F /* Sources */,
 				4ECB8D34292AFF7400AD258F /* Frameworks */,
 				4ECB8D35292AFF7400AD258F /* Resources */,
+				4E00FB0C293D860000B24617 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E00FB0A293D860000B24617 /* PBXTargetDependency */,
 			);
 			name = Auth_keeper;
 			packageProductDependencies = (
@@ -156,6 +248,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					4E00FAF9293D85FF00B24617 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 					4ECB8D36292AFF7400AD258F = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -178,11 +273,20 @@
 			projectRoot = "";
 			targets = (
 				4ECB8D36292AFF7400AD258F /* Auth_keeper */,
+				4E00FAF9293D85FF00B24617 /* widgetAppExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E00FAF8293D85FF00B24617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E00FB05293D860000B24617 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4ECB8D35292AFF7400AD258F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,12 +300,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E00FAF6293D85FF00B24617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E00FB07293D860000B24617 /* widgetApp.intentdefinition in Sources */,
+				4E00FB02293D85FF00B24617 /* widgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4ECB8D33292AFF7400AD258F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E00FAF5293D7F3200B24617 /* SplashScreen.swift in Sources */,
 				4E16B278292E7777001ACF1A /* HomePage.swift in Sources */,
 				4E2D2A4C293656BD009A9D55 /* detailPage.swift in Sources */,
+				4E00FB08293D860000B24617 /* widgetApp.intentdefinition in Sources */,
 				4ECB8D3D292AFF7400AD258F /* ContentView.swift in Sources */,
 				4EEEFCCE29300EA500F7A06B /* firebase.swift in Sources */,
 				4E55FB46292C5198002C142B /* SignUpPage.swift in Sources */,
@@ -214,7 +329,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4E00FB0A293D860000B24617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E00FAF9293D85FF00B24617 /* widgetAppExtension */;
+			targetProxy = 4E00FB09293D860000B24617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4E00FB0D293D860000B24617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PGN3MXC5WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widgetApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widgetApp;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bharathmamidi.Auth-keeper.widgetApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E00FB0E293D860000B24617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PGN3MXC5WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widgetApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widgetApp;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bharathmamidi.Auth-keeper.widgetApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4ECB8D43292AFF7500AD258F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +509,7 @@
 		4ECB8D46292AFF7500AD258F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -361,6 +539,7 @@
 		4ECB8D47292AFF7500AD258F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +569,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E00FB0F293D860000B24617 /* Build configuration list for PBXNativeTarget "widgetAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E00FB0D293D860000B24617 /* Debug */,
+				4E00FB0E293D860000B24617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4ECB8D32292AFF7400AD258F /* Build configuration list for PBXProject "Auth_keeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
