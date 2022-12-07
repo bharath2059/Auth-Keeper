@@ -110,6 +110,16 @@ class CRUD : ObservableObject{
        
     }
     
+    func signOut()->Bool{
+        do {
+          try auth.signOut()
+            return true
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+            return false
+        }
+    }
+    
              
         }
 

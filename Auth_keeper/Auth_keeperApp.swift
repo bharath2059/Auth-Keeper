@@ -10,15 +10,30 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
 
-class AppDelegate: NSObject, UIApplicationDelegate {
+class AppDelegate: UIResponder,  UIApplicationDelegate, UNUserNotificationCenterDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+      UNUserNotificationCenter.current().delegate = self
       // Use Firebase library to configure APIs
     FirebaseApp.configure()
    
     return true
   }
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                    willPresent notification: UNNotification,
+                                    withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+            print("notification")
+        completionHandler([.banner, .badge, .sound])
+
+        }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("notification")
+        completionHandler([.sound, .badge])
+    }
+    
 }
+
+
 
 @main
 struct Auth_keeperApp: App {

@@ -17,17 +17,18 @@ struct SignUpPage: View {
     @State  var ispresented = false
     @ObservedObject var authentication = Authentication()
     
+    
     var body: some View {
         NavigationStack{
             VStack{
                 Text("Auth-Keeper").font(.largeTitle)
-                Text("SignUp").font(.system(size: 30, weight: .medium))
+                Text("SignUp").font(.system(size: 30, weight: .medium)).padding(20)
                 
                 TextField("Name",text: $username).frame(width: 300, height: 30).accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
                     .border(.secondary).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 6)) .cornerRadius(5)
                 
                 TextField("UserName",text: $email).frame(width: 300, height: 30).accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
-                    .border(.secondary).padding()
+                    .border(.secondary).padding(10)
                 
                 HStack {
                     ZStack(alignment: .trailing) {
@@ -55,12 +56,12 @@ struct SignUpPage: View {
                     authentication.register(email: email, password: password)
                     
                 } label: {
-                    Text("Register")
-                }
+                    Text("Register").font(.system(size: 20)).padding(20)
+                }.padding(20)
             }
             
             .navigationDestination(isPresented: $authentication.isAccountCreated){
-                       ContentView()
+                ContentView().navigationBarBackButtonHidden(true)
                    
             } 
         }

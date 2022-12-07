@@ -25,7 +25,7 @@ struct ContentView: View {
                 Text("Log In").font(.largeTitle) .foregroundColor(.orange)
                 
                 TextField("UserName",text: $username).frame(width: 300, height: 30).accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
-                    .border(.secondary).padding()
+                    .border(.secondary).padding(20)
                 
                 HStack {
                     ZStack(alignment: .trailing) {
@@ -54,6 +54,7 @@ struct ContentView: View {
                 } label: {
                     Text("Login").font(.system(size: 20, weight: .semibold)).padding()
                 }
+               
                 
                 NavigationLink("Register", destination: SignUpPage()).font(.system(size: 20, weight: .semibold)).padding()
                 

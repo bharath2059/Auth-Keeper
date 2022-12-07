@@ -10,6 +10,7 @@ import SwiftUI
 struct HomePage: View {
     @ObservedObject var firebase = CRUD()
     @State var dataArray : [PasswordData] = []
+    @State var userSignedOut : Bool = false
     var body: some View {
         NavigationView(){
             VStack{
@@ -19,7 +20,16 @@ struct HomePage: View {
                     }
                 }
                 
-                NavigationLink("add password", destination: CreateRecord())
+                NavigationLink("Add password", destination: CreateRecord()).font(.system(size: 20, weight: .medium)).padding(20)
+                
+                Button{
+                userSignedOut = firebase.signOut()
+                }label: {
+                    Text("Sign Out").foregroundColor(.red).font(.system(size: 20, weight: .medium))
+                }
+                
+            }.navigationDestination(isPresented: $userSignedOut){
+                ContentView().navigationBarBackButtonHidden(true)
             }
         
         }.onAppear(){

@@ -30,6 +30,7 @@ class Authentication :ObservableObject{
                 return
             }
             DispatchQueue.main.async {
+                NotificationGenerator.generateNotification(title: "congratulations", desc: "Your Account is created")
                 self.isAccountCreated=true
                 print(self.isAccountCreated)
             }
